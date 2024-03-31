@@ -14,6 +14,9 @@
     }
 }
 
+h1, h3, p {
+    color: rgb(172, 56, 56);
+} 
 
 html, body {
     width: 100%;
@@ -60,13 +63,14 @@ nav {
     background: none;
     color: wheat;
 }
-#part1, #part2 {
+.part, #part2 {
     background-color: wheat;
     padding: 10px;
     border-radius: 10px;
-    display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 20px;
+    
 }
 
 #part1:hover a {
@@ -77,21 +81,28 @@ nav {
     filter: brightness(1);
 }
 
-.part {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
 .part a {
     background-color: brown;
     color: wheat;
-    padding: 10px 25px;
+    padding: 10px 45px;
     border-radius: 3px;
     text-decoration: none;
     text-wrap: nowrap;
-    width: 80px;
+    margin: 5px;
+    white-space: nowrap;
 }
+
+.text {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.text-item {
+    width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 
 
